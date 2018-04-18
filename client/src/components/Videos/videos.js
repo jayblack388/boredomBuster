@@ -16,8 +16,7 @@ export default class Videos extends Component {
     super(props);
     this.state = {
       videos: [],
-      selectedVideo: null,
-      offset: []
+      selectedVideo: null
     }
     this.videoSearch("Coding");
   }
@@ -29,14 +28,6 @@ export default class Videos extends Component {
         videos,
         selectedVideo: videos[0]
       })
-      this.offset();
-    })
-  }
-
-  offset() {
-    const arr = this.state.videos.shift();
-    this.setState({
-      offset: arr
     })
   }
 
@@ -58,7 +49,6 @@ export default class Videos extends Component {
             API.postActivity(activity);
           }}
           videos={this.state.videos}
-          offset={this.state.offset}
         />
       </div>
     );
