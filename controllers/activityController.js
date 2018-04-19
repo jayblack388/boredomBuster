@@ -33,5 +33,18 @@ module.exports = {
       .then(dbModel => dbModel.remove())
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+  },
+  findOrCreate: function(req, res) {
+    db.Activity
+      .findOne({ link: req.body.link })
+      .then(dbModel => {
+        if (dbModel) {
+          res.json(dbModel)
+        } else {
+          db.Activity.create(req.body)
+          .then(newModel => res.json(newModel))
+        }
+      })
+      .catch(err => res.status(422).json(err));
   }
 };

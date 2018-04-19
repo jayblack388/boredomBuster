@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./nav.css";
-
 export default class Nav extends Component {
   constructor(props) {
     super(props);
@@ -26,8 +25,8 @@ export default class Nav extends Component {
       ? "navbar-toggler navbar-toggler collapsed"
       : "navbar-toggler navbar-toggler";
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark transparent-nav">
-        <div className="container">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark charcoal-nav">
+        <div className="container-fluid">
           <button
             onClick={this.toggleNavbar}
             className={classTwo}
@@ -39,8 +38,17 @@ export default class Nav extends Component {
           >
             <span className="navbar-toggler-icon" />
           </button>
+          <Link className="navbar-brand" to="/">
+              Boredom Buster
+            </Link>
           <div className={classOne} id="navbarResponsive">
+            
             <ul className="navbar-nav">
+              <li>
+                <Link className="nav-link" to="/video">
+                  Video
+                </Link>
+              </li>
               <li>
                 <Link className="nav-link" to="/hoobastank">
                   Food
