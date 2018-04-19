@@ -39,7 +39,7 @@ export default class Nav extends Component {
             <span className="navbar-toggler-icon" />
           </button>
           <Link className="navbar-brand" to="/">
-              Boredom Buster
+              <img src="./logo.png" alt="logo"/>
             </Link>
           <div className={classOne} id="navbarResponsive">
             

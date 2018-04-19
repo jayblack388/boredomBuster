@@ -1,3 +1,7 @@
 .nav-charcoal {
     background-color: #373737;
 }
+
+.navbar-brand img {
+    max-height: 40px;
+}
