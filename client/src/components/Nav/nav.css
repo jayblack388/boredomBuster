@@ -2,10 +2,14 @@
     background-color: #373737;
 }
 
-.nav-link {
+li .nav-link {
     width: 80px;
+    color:#f4f4f4;
 }
 
+li .nav-link:hover {
+    color: #DCD0C0;
+}
 .navbar-brand img {
     max-height: 40px;
 }

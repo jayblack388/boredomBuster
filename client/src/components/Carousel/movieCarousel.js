@@ -5,7 +5,6 @@ import CustomSlide from "./movieSlide";
 export default class SimpleSlider extends Component {
   renderItems() {
     const movies = this.props.assets;
-    console.log(this.props);
     if (!movies) {
       return <div>Loading...</div>;
     }
