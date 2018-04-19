@@ -50,11 +50,6 @@ export default class Nav extends Component {
                 </Link>
               </li>
               <li>
-                <Link className="nav-link" to="/hoobastank">
-                  Food
-                </Link>
-              </li>
-              <li>
                 <Link className="nav-link" to="/movie">
                   Movies
                 </Link>
