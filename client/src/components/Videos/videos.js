@@ -31,7 +31,8 @@ export default class Videos extends Component {
 
   videoSearch(term) {
     term += " tutorials";
-    API.searchYT(term).then(response => {
+    const search = { term }
+    API.searchYT(search).then(response => {
       this.setState({
         videos: response.data,
         selectedVideo: response.data[0]
