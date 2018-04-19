@@ -8,7 +8,7 @@ import "./movies.css";
 import API from "../../utils/API";
 import axios from "axios";
 
-const API_KEY = process.env.MOVIEKEY || "665b9ee5cc64ad84ac40ff9bef4b5e47";
+const API_KEY = process.env.MOVIEKEY;
 
 export default class Movies extends Component {
   constructor(props) {

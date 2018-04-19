@@ -8,6 +8,7 @@ body {
 
 .search-bar input {
     width: 75%;
+    border-radius: 10px;
 }
 
 .video-item img {
@@ -37,11 +38,12 @@ body {
     cursor: pointer;
     font-size: 0.9rem;
     overflow: hidden;
-    background-color: #f4f4f4;
+    background-color: #c0b283;
+    border-radius: 10px;
 }
 
 .list-group-item:hover {
-    background-color: #dcd0c0;
+    background-color: #f4f4f4;
 }
 
 .media-heading {

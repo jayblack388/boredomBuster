@@ -8,6 +8,7 @@ body {
 
 .search-bar input {
     width: 75%;
+    border-radius: 10px;
 }
 
 .slide {
@@ -20,6 +21,7 @@ body {
     margin: auto;
     background-color: #373737;
     color: #c0b283;
+    border-radius: 8px;
 }
 
 .btn-tmdb:hover {
@@ -30,8 +32,14 @@ body {
     color: #373737;
 }
 
+.card-footer {
+    background-color: #373737;
+    text-align: center;
+}
+
 .card {
     background-color: #c0b283;
+    border-radius: 8px;
 }
 
 img.card-img-top {
