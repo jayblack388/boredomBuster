@@ -1,5 +1,8 @@
+body {
+    background-color: #f4f4f4
+}
 .search-bar {
-    margin: 20px;
+    margin: 4px;
     text-align: center;
 }
 
@@ -16,14 +19,17 @@
     padding-right: 0;
 }
 
+.video-detail .embed-responsive .embed-responsive-item, .list-group {
+    height: 570px;
+}
+
 .list-group {
     padding: 0;
 }
 
 .video-detail .details {
-    margin-top: 10px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #c0b283;
     border-radius: 4px;
 }
 
@@ -31,10 +37,11 @@
     cursor: pointer;
     font-size: 0.9rem;
     overflow: hidden;
+    background-color: #f4f4f4;
 }
 
 .list-group-item:hover {
-    background-color: #eee;
+    background-color: #dcd0c0;
 }
 
 .media-heading {

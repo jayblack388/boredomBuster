@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import SearchBar from "./searchBar";
 import VideoList from "./video-list";
 import VideoDetail from "./video-detail";
+import DetailBox from "./detail-box";
 import "./videos.css"
 import YTSearch from 'youtube-api-search';
 import API from '../../utils/API';
@@ -19,6 +20,17 @@ export default class Videos extends Component {
       selectedVideo: null
     }
     this.videoSearch("Coding");
+  }
+
+  handleVideoSelect(selectedVideo) {
+      this.setState({selectedVideo});
+      const activity = {
+        title: selectedVideo.snippet.title,
+        link: `https://www.youtube.com/embed/${selectedVideo.id.videoId}`,
+        img: selectedVideo.snippet.thumbnails.default.url,
+        description: selectedVideo.snippet.description
+      }
+      API.postActivity(activity);
   }
 
   videoSearch(term) {
@@ -38,18 +50,10 @@ export default class Videos extends Component {
         <SearchBar onSearchTermChange={videoSearch} />
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList 
-          onVideoSelect={(selectedVideo) => {
-            this.setState({selectedVideo});
-            const activity = {
-              title: selectedVideo.snippet.title,
-              link: `https://www.youtube.com/embed/${selectedVideo.id.videoId}`,
-              img: selectedVideo.snippet.thumbnails.default.url,
-              description: selectedVideo.snippet.description
-            }
-            API.postActivity(activity);
-          }}
+          onVideoSelect={this.handleVideoSelect.bind(this)}
           videos={this.state.videos}
         />
+        <DetailBox video={this.state.selectedVideo}/>
       </div>
     );
   }
