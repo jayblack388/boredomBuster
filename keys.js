@@ -1,5 +1,6 @@
-console.log('this is loaded');
+console.log('keys loaded');
 
 exports.keys = {
-	yt: process.env.YTKEY
+	yt: process.env.YTKEY,
+	movie: process.env.MOVIEKEY
 };

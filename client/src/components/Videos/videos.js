@@ -38,9 +38,6 @@ export default class Videos extends Component {
         selectedVideo: response.data[0]
       });
     });
-    /* YTSearch({key: API_KEY, term}, (videos) => {
-      
-    }) */
   }
 
   render() {

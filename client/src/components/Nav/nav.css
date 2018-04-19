@@ -2,6 +2,10 @@
     background-color: #373737;
 }
 
+.nav-link {
+    width: 80px;
+}
+
 .navbar-brand img {
     max-height: 40px;
 }

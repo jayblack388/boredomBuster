@@ -8,6 +8,9 @@ export default {
     return axios.post("/api/activity", activity);
   },
   searchYT: function(term) {
-      return axios.post("api/yt", term)
+      return axios.post("/api/yt", term)
+  },
+  searchMovie: function(query) {
+      return axios.post("/api/movie", query)
   }
 };

@@ -1,9 +1,13 @@
 const router = require("express").Router();
 const activityRoutes = require("./activity");
-const apiRouter = require("./yt");
+const ytRouter = require("./yt");
+const movieRouter = require("./movie");
+
 
 // Activity routes
 router.use("/activity", activityRoutes);
-router.use("/yt", apiRouter);
+router.use("/yt", ytRouter);
+router.use("/movie", movieRouter);
+
 
 module.exports = router;

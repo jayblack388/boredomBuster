@@ -24,6 +24,8 @@
     "dotenv": "^5.0.1",
     "express": "^4.15.4",
     "mongoose": "^4.11.7",
+    "moviedb-promise": "^1.2.2",
+    "xmlhttprequest": "^1.8.0",
     "youtube-api-search": "^0.0.5"
   }
 }

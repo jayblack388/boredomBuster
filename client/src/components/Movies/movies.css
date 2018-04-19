@@ -1,0 +1,48 @@
+body {
+    background-color: #f4f4f4
+}
+.search-bar {
+    margin: 4px;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 75%;
+}
+
+.slide {
+    max-height: 350px;
+    min-height: 350px;
+}
+
+.btn-tmdb {
+    display: block;
+    margin: auto;
+    background-color: #373737;
+    color: #c0b283;
+}
+
+.btn-tmdb:hover {
+    color: #f4f4f4;
+}
+
+.card-title, .card-text {
+    color: #373737;
+}
+
+.card {
+    background-color: #c0b283;
+}
+
+img.card-img-top {
+    height: auto;
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+p.card-text {
+    height: 100px;
+    max-height: 100px;
+    overflow-y: auto;
+}
