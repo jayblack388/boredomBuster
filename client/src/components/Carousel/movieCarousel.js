@@ -33,6 +33,8 @@ export default class SimpleSlider extends Component {
       slidesToShow: 4,
       slidesToScroll: 4,
       autoplay: true,
+      adaptiveHeight: true,
+      pauseOnHover: true,
       responsive: [
         {
           breakpoint: 1024,

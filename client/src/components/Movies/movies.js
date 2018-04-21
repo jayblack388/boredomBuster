@@ -34,11 +34,13 @@ export default class Movies extends Component {
   }
 
   movieSearch(term) {
+    // API.searchMovie({term})
     axios
       .get(
         `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=en-US&query=${term}&page=1&include_adult=false&region=US`
       )
       .then(response => {
+        console.log(response)
         this.setState({
           movies: response.data.results
         });

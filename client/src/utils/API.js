@@ -10,7 +10,7 @@ export default {
   searchYT: function(term) {
       return axios.post("/api/yt", term)
   },
-  searchMovie: function(query) {
-      return axios.post("/api/movie", query)
+  searchMovie: function(term) {
+      return axios.post("/api/movie", term)
   }
 };
